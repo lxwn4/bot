@@ -14,12 +14,12 @@ module.exports = (bot) => {
       }
       
       else if (message.content === prefix + "rolespicker") {
-        let among = bot.emojis.cache.get("883526909873520721");
-        let gartic = bot.emojis.cache.get("883526917364547585");
-        let lol = bot.emojis.cache.get("881022494855798875");
-        let genshin = bot.emojis.cache.get("883526973345898496");
-        let horror = bot.emojis.cache.get("883527051787792414");
-        let genshinPing = bot.emojis.cache.get("883527041146818581");
+        let among = bot.emojis.cache.get("788106551436509195");
+        let gartic = bot.emojis.cache.get("886253772077142117");
+        let lol = bot.emojis.cache.get("830856908558172170");
+        let genshin = bot.emojis.cache.get("830856702072193054");
+        let horror = bot.emojis.cache.get("830852104289255424");
+        let genshinPing = bot.emojis.cache.get("886270613432467466");
 
         const rolesEmbed = new Discord.MessageEmbed()
         .setColor("#f7dc92")
@@ -34,12 +34,12 @@ module.exports = (bot) => {
 
 
         let m = await message.channel.send(rolesEmbed);
-        await m.react("883526909873520721");
-        await m.react("883526917364547585");
-        await m.react("881022494855798875");
-        await m.react("883526973345898496");
-        await m.react("883527051787792414");
-        await m.react("883527041146818581");
+        await m.react("788106551436509195");
+        await m.react("886253772077142117");
+        await m.react("830856908558172170");
+        await m.react("830856702072193054");
+        await m.react("830852104289255424");
+        await m.react("886270613432467466");
       }
     })
 
@@ -50,9 +50,9 @@ module.exports = (bot) => {
         if (!reaction.message.guild) return;
 
         // AMONG US //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "among") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "loupe") {
+                reaction.message.guild.members.cache.get(user.id).roles.add("787793994855874570");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Among Us** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -62,9 +62,9 @@ module.exports = (bot) => {
         }
 
         // ARTISTE //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "draw") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "gartic") {
+                reaction.message.guild.members.cache.get(user.id).roles.add("792447371425742858");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Artiste** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -74,9 +74,9 @@ module.exports = (bot) => {
         }
 
         // LOL //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "BlackHeart") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "m7") {
+                reaction.message.guild.members.cache.get(user.id).roles.add("787794038337962014");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **League of Legends** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -86,9 +86,9 @@ module.exports = (bot) => {
         }
 
         // GENSHIN //
-        if (reaction.message.channel.id === "883501720343285820") {
+        if (reaction.message.channel.id === "886271273355862117") {
             if (reaction.emoji.name === "primo") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003737197674556");
+                reaction.message.guild.members.cache.get(user.id).roles.add("796448137240641576");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Genshin Impact** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -98,9 +98,9 @@ module.exports = (bot) => {
         }
 
         // HORREUR //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "horror") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "crucifix") {
+                reaction.message.guild.members.cache.get(user.id).roles.add("820790314662101032");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Horreur** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -110,9 +110,9 @@ module.exports = (bot) => {
         }
 
         // REMINDER //
-        if (reaction.message.channel.id === "883501720343285820") {
+        if (reaction.message.channel.id === "886271273355862117") {
             if (reaction.emoji.name === "crystal") {
-                reaction.message.guild.members.cache.get(user.id).roles.add("883003760366981240");
+                reaction.message.guild.members.cache.get(user.id).roles.add("886252962433880094");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Notif** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -133,9 +133,9 @@ module.exports = (bot) => {
 
 
         // AMONG //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "among") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "loupe") {
+                reaction.message.guild.members.cache.get(user.id).roles.remove("787793994855874570");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Among Us** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -145,9 +145,9 @@ module.exports = (bot) => {
         }
 
         // ARTISTE //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "draw") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "gartic") {
+                reaction.message.guild.members.cache.get(user.id).roles.remove("792447371425742858");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Artiste** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -157,9 +157,9 @@ module.exports = (bot) => {
         }
 
         // LOL //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "BlackHeart") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "m7") {
+                reaction.message.guild.members.cache.get(user.id).roles.remove("787794038337962014");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **League of Legends** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -169,9 +169,9 @@ module.exports = (bot) => {
         }
 
         // GENSHIN //
-        if (reaction.message.channel.id === "883501720343285820") {
+        if (reaction.message.channel.id === "886271273355862117") {
             if (reaction.emoji.name === "primo") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003737197674556");
+                reaction.message.guild.members.cache.get(user.id).roles.remove("796448137240641576");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Genshin Impact** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -181,9 +181,9 @@ module.exports = (bot) => {
         }
 
         // HORROR //
-        if (reaction.message.channel.id === "883501720343285820") {
-            if (reaction.emoji.name === "horror") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003737197674556");
+        if (reaction.message.channel.id === "886271273355862117") {
+            if (reaction.emoji.name === "crucifix") {
+                reaction.message.guild.members.cache.get(user.id).roles.remove("820790314662101032");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Horreur** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -193,9 +193,9 @@ module.exports = (bot) => {
         }
 
         // REMINDER //
-        if (reaction.message.channel.id === "883501720343285820") {
+        if (reaction.message.channel.id === "886271273355862117") {
             if (reaction.emoji.name === "crystal") {
-                reaction.message.guild.members.cache.get(user.id).roles.remove("883003760366981240");
+                reaction.message.guild.members.cache.get(user.id).roles.remove("886252962433880094");
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Notif** t'as été enlevé.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
@@ -208,9 +208,9 @@ module.exports = (bot) => {
         console.log('remove')
         
     })
-    let roleId = "883003760366981240";
+    let roleId = "886252962433880094";
     let scheduledMessage = new cron.CronJob('00 00 18 * * *', () => {
-        const channel = bot.channels.cache.get('865638900118585346');
+        const channel = bot.channels.cache.get('886271116405014568');
         channel.send("<@&" + roleId + ">\nIl est temps de faire votre Hoyolab ! \nhttps://www.hoyolab.com/genshin/" )
     })
         scheduledMessage.start();
