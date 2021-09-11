@@ -56,7 +56,7 @@ module.exports = (bot) => {
                 reaction.message.channel.send(`<@${user.id}>, le rôle **Among Us** t'as été ajouté.`)
                 .then(msg => {
                     setTimeout(() => msg.delete(), 2000)
-                    
+                    console.log('among us')
                 })    
             }
         }
