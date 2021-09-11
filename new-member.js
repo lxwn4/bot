@@ -7,7 +7,7 @@ const cardModel = require('./card-model');
 
 module.exports = (bot) => {
     bot.on('guildMemberAdd', async guildMember => {
-        var i = "872949932452098148";
+        var i = "787794705957388318";
         let role = guildMember.guild.roles.cache.find(r => r.id === i);
         guildMember.roles.add(role);
         
@@ -16,7 +16,7 @@ module.exports = (bot) => {
             imgUrl: "http://i.stack.imgur.com/vhoa0.jpg"
         }).save();
 
-        let channel = bot.channels.cache.get("865638900118585346");
+        let channel = bot.channels.cache.get("787794676869627934");
         if (!channel) return;
     
         
@@ -38,7 +38,7 @@ Cet entretien ne dure que **3 minutes** et va nous servir à te donner les rôle
     })
     
     bot.on('guildMemberRemove', async guildMember => {
-        let channel = bot.channels.cache.get("865638900118585346");
+        let channel = bot.channels.cache.get("818918418697682954");
         channel.send(`Adieu <@${guildMember.user.id}>`)
     
         
