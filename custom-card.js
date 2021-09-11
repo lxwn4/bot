@@ -37,7 +37,7 @@ module.exports = (bot) => {
             Newdata.imgUrl = message.content.slice(7);
 
             await Newdata.save();
-            message.reply("Ton image a bien été mis à jour !~")
+            message.reply("Ton image a bien été mise à jour !~")
         }
     })
 
