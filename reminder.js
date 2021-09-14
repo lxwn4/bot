@@ -209,7 +209,7 @@ module.exports = (bot) => {
         
     })
     let roleId = "886252962433880094";
-    let scheduledMessage = new cron.CronJob('01 25 18 * * *', () => {
+    let scheduledMessage = new cron.CronJob('01 25 16 * * *', () => {
         const channel = bot.channels.cache.get('886271116405014568');
         channel.send("<@&" + roleId + ">\nIl est temps de faire votre Hoyolab ! \nhttps://www.hoyolab.com/genshin/" );
         console.log("Hoyolab !");
